@@ -1905,3 +1905,21 @@ p {
   color: var(--white);
   background-color: var(--primary-dark);
 }
+
+
+.navbar-area.navbar-nine {
+  background-color: var(--white);
+}
+.navbar-area.navbar-nine .navbar .navbar-nav .nav-item a{
+  color: var(--primary);
+}
+.navbar-toggler {
+  background-color: var(--primary);
+}
+.navbar-area.navbar-nine .navbar .navbar-collapse {
+  background-color: var(--white);
+}
+
+.navbar-area.navbar-nine .navbar .navbar-btn .menu-bar {
+  color: var(--black)
+}
