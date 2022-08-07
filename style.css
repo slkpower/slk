@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 /*===========================
-  COMMON css 
+  COMMON css
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #63c334;
-  --primary-dark: #427f5f;
-  --primary-light: #a7d88f;
+  --primary: #427f5f;
+  --primary-dark: #2F5B44;
+  --primary-light: #5BAB81;
   --accent: #00d4d7;
   --accent-dark: #00bac1;
   --accent-light: #dff9f8;
@@ -387,7 +387,7 @@ p {
 
 
 /*===========================
-  NAVBAR css 
+  NAVBAR css
 ===========================*/
 .navbar-toggler:focus {
   box-shadow: none;
@@ -911,7 +911,7 @@ p {
 .header-eight {
   position: relative;
   padding:160px 0 100px 0;
-  background: var(--primary);
+  background: var(--primary-dark);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight {
@@ -1149,7 +1149,7 @@ p {
 
 
 /*===========================
-  services css 
+  services css
 ===========================*/
 .services-eight {
   padding: 100px 0;
