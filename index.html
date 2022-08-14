@@ -268,7 +268,7 @@
 
 
 <!--====== portfolio starts ======-->
-<section id="portfolio" style="background-color: var(--light-3);" class="portfolio-area portfolio-three border-top">
+<section id="portfolio" style="background-color: var(--light-3);" class="portfolio-area portfolio-three border-top border-bottom">
     <div class="section-title-five">
         <div class="container">
             <div class="row">
@@ -959,10 +959,14 @@
 
         $('.portfolio-menu button').click(function () {
             var id = this.id
+            var prevId = portfolioActiveFilter.attr('id');
+
+            if(id === prevId) {
+                return;
+            }
 
             portfolioActiveFilter.removeClass('active');
             $(this).addClass('active');
-            var prevId = portfolioActiveFilter.attr('id');
             console.log(prevId, id);
             $('.'+id+'-portfolio-item').removeClass('hide');
             $('.'+prevId+'-portfolio-item').addClass('hide');
