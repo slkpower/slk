@@ -930,6 +930,11 @@ p {
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
 }
+.header-eight .header-content h2 {
+  color: var(--white);
+  text-shadow: 0px 3px 8px #00000017;
+  text-transform: capitalize;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight .header-content h1  {
     font-size: 35px;
@@ -1555,11 +1560,16 @@ p {
 }
 .brand-area .clients-logos {
   text-align: center;
-  display: inline-block;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .brand-area .clients-logos .single-image {
-  display: inline-block;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 13px 10px;
   background-color: var(--white);
   line-height: 100px;
@@ -1754,10 +1764,6 @@ p {
 .contact-form-wrapper .contact-form textarea {
   border-radius: 18px;
 }
-.map-style-9 {
-  margin-top: -130px;
-}
-
 
 /* Footer eleven css */
 .footer-eleven {
