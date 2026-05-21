@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "PT Sarana Lima Kencana — Jual, Sewa, Service & Maintenance Genset",
+    "description": "Penyedia generator set, panel listrik, dan layanan maintenance terpercaya. Delivering Quality through Solutions."
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "products": "Produk & Layanan",
+    "clients": "Klien Kami",
+    "contact": "Hubungi Kami"
+  },
+  "common": {
+    "learnMore": "Pelajari Lebih Lanjut",
+    "viewAll": "Lihat Semua",
+    "search": "Cari produk...",
+    "noResults": "Tidak ada hasil ditemukan.",
+    "openBrochure": "Buka Brosur",
+    "close": "Tutup",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "page": "Halaman",
+    "of": "dari",
+    "zoomIn": "Perbesar",
+    "zoomOut": "Perkecil",
+    "toggleTheme": "Ubah tema",
+    "switchLanguage": "Ganti bahasa"
+  },
+  "hero": {
+    "company": "PT Sarana Lima Kencana",
+    "tagline": "Delivering Quality through Solutions",
+    "description": "Dengan tagline \"Delivering Quality through Solutions\", kami berkomitmen untuk fokus pada kualitas dan memberikan hasil extraordinary dalam keberlangsungan proses bisnis Anda.",
+    "ctaContact": "Hubungi Kami",
+    "ctaProducts": "Lihat Produk"
+  },
+  "about": {
+    "eyebrow": "Tentang Kami",
+    "title": "PT Sarana Lima Kencana",
+    "tabs": {
+      "values": "Nilai Perusahaan",
+      "vision": "Visi & Misi"
+    },
+    "values": {
+      "solutif": {
+        "label": "Solutif",
+        "text": "Memberikan solusi terbaik untuk menunjang kinerja bisnis para mitra usaha."
+      },
+      "loyal": {
+        "label": "Loyal",
+        "text": "Berkomitmen dan loyal di internal maupun eksternal."
+      },
+      "kompeten": {
+        "label": "Kompeten",
+        "text": "SLK dilengkapi dengan orang yang berkompeten di bidangnya, dan siap membantu mitra usaha."
+      }
+    },
+    "vision": {
+      "label": "Visi",
+      "text": "Menjadi perusahaan terdepan di bidang Generator Set dan kelistrikan Panel."
+    },
+    "mission": {
+      "label": "Misi",
+      "text": "Memberikan kualitas pada setiap pelayanan yang kami tawarkan kepada Anda untuk mensupport penuh bisnis dan dapat memenuhi target yang diharapkan."
+    }
+  },
+  "products": {
+    "eyebrow": "Produk & Layanan",
+    "title": "Produk dan Layanan Kami",
+    "subtitle": "Kami menawarkan berbagai produk dan jasa. Silakan klik kategori di bawah untuk melihat detail layanan kami.",
+    "searchPlaceholder": "Cari produk atau layanan...",
+    "categories": {
+      "rent": "Sarana Rent",
+      "power": "Sarana Power",
+      "services": "Sarana Services",
+      "parts": "Sarana Parts",
+      "panel": "Sarana Panel"
+    },
+    "descriptions": {
+      "rent": "Sarana Rent memiliki pelayanan di bidang penyewaan generator set dengan kapasitas 25-500 kVA dengan harga yang sangat kompetitif.",
+      "power": "Dengan brand Sarana Power, kami memberikan solusi kebutuhan generator set dengan berbagai brand terkemuka untuk menghasilkan power maksimal dalam mensupport bisnis project Anda. Tersedia dalam kapasitas 9-1000 kVA.",
+      "services": "Tidak hanya dari sisi penjualan unit, Sarana Service berkomitmen untuk menyediakan wadah dalam hal kebutuhan service genset hingga pekerjaan overhaul.",
+      "parts": "Sarana Parts berkompeten dalam hal kebutuhan pengadaan genuine sparepart untuk memberikan kualitas terhadap Genset Anda.",
+      "panel": "Sarana Panel memiliki panel maker untuk mensupport fabrikasi panel ATS & Sinkron sesuai dengan kebutuhan Anda."
+    }
+  },
+  "clients": {
+    "eyebrow": "Klien Kami",
+    "title": "Partner Bisnis Kami",
+    "subtitle": "Berikut adalah klien yang telah mempercayakan kami sebagai partner bisnis andalan mereka."
+  },
+  "contact": {
+    "eyebrow": "Kontak",
+    "title": "Hubungi Kami",
+    "subtitle": "Kami siap melayani Anda melalui WhatsApp, email, atau telepon.",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "number": "0888-0964-4596",
+      "cta": "Klik untuk chat WhatsApp"
+    },
+    "email": {
+      "label": "Email",
+      "address": "saranalimakencana@gmail.com",
+      "cta": "Kirim email"
+    },
+    "phone": {
+      "label": "Telepon / SMS",
+      "number": "0888-0964-4596"
+    },
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "phone": "No. HP/WhatsApp",
+      "subject": "Perihal",
+      "message": "Pesan Anda",
+      "submit": "Kirim Pesan",
+      "maintenance": "Form kontak sedang dalam maintenance. Silakan hubungi kami melalui WhatsApp, email atau telepon."
+    }
+  },
+  "footer": {
+    "tagline": "Delivering Quality through Solutions",
+    "rights": "Hak cipta dilindungi.",
+    "quickLinks": "Tautan Cepat",
+    "contactUs": "Kontak"
+  }
+}

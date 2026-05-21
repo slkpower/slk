@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "PT Sarana Lima Kencana — Genset Sales, Rental, Service & Maintenance",
+    "description": "Trusted provider of generator sets, electrical panels, and maintenance services. Delivering Quality through Solutions."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products & Services",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "search": "Search products...",
+    "noResults": "No results found.",
+    "openBrochure": "Open brochure",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "toggleTheme": "Toggle theme",
+    "switchLanguage": "Switch language"
+  },
+  "hero": {
+    "company": "PT Sarana Lima Kencana",
+    "tagline": "Delivering Quality through Solutions",
+    "description": "With the tagline \"Delivering Quality through Solutions\", we are committed to focusing on quality and delivering extraordinary results for the sustainability of your business processes.",
+    "ctaContact": "Contact us",
+    "ctaProducts": "View products"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "PT Sarana Lima Kencana",
+    "tabs": {
+      "values": "Our Values",
+      "vision": "Vision & Mission"
+    },
+    "values": {
+      "solutif": {
+        "label": "Solutive",
+        "text": "Providing the best solutions to support the performance of our business partners."
+      },
+      "loyal": {
+        "label": "Loyal",
+        "text": "Committed and loyal both internally and externally."
+      },
+      "kompeten": {
+        "label": "Competent",
+        "text": "SLK is equipped with people who are competent in their field, ready to help business partners."
+      }
+    },
+    "vision": {
+      "label": "Vision",
+      "text": "To be the leading company in Generator Sets and electrical Panel."
+    },
+    "mission": {
+      "label": "Mission",
+      "text": "To deliver quality in every service we offer, fully supporting your business and helping you meet your targets."
+    }
+  },
+  "products": {
+    "eyebrow": "Products & Services",
+    "title": "Our Products and Services",
+    "subtitle": "We offer a wide range of products and services. Click a category below to see details.",
+    "searchPlaceholder": "Search products or services...",
+    "categories": {
+      "rent": "Sarana Rent",
+      "power": "Sarana Power",
+      "services": "Sarana Services",
+      "parts": "Sarana Parts",
+      "panel": "Sarana Panel"
+    },
+    "descriptions": {
+      "rent": "Sarana Rent provides generator set rental services with capacities of 25-500 kVA at highly competitive prices.",
+      "power": "Under the Sarana Power brand, we deliver generator set solutions from leading brands for maximum power to support your project. Available in 9-1000 kVA capacities.",
+      "services": "Beyond unit sales, Sarana Service is committed to providing genset service needs all the way through overhaul work.",
+      "parts": "Sarana Parts is competent in procuring genuine spare parts to maintain the quality of your Genset.",
+      "panel": "Sarana Panel features a panel maker to support ATS & Synchronize panel fabrication tailored to your needs."
+    }
+  },
+  "clients": {
+    "eyebrow": "Our Clients",
+    "title": "Our Business Partners",
+    "subtitle": "These are the clients who have trusted us as their reliable business partner."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "We are ready to serve you via WhatsApp, email, or phone.",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "number": "0888-0964-4596",
+      "cta": "Click to chat on WhatsApp"
+    },
+    "email": {
+      "label": "Email",
+      "address": "saranalimakencana@gmail.com",
+      "cta": "Send an email"
+    },
+    "phone": {
+      "label": "Phone / SMS",
+      "number": "0888-0964-4596"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "subject": "Subject",
+      "message": "Your message",
+      "submit": "Send message",
+      "maintenance": "The contact form is under maintenance. Please reach us via WhatsApp, email, or phone."
+    }
+  },
+  "footer": {
+    "tagline": "Delivering Quality through Solutions",
+    "rights": "All rights reserved.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact"
+  }
+}
