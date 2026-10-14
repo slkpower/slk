@@ -1,11 +1,11 @@
 'use client';
 
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
 import { Link, usePathname } from '@/i18n/routing';
 import { cn } from '@/lib/cn';
-import { Menu, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ThemeToggle } from './ThemeToggle';
 
@@ -30,10 +30,9 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: close mobile menu on route change
   useEffect(() => {
     setOpen(false);
-  }, [pathname]);
+  }, []);
 
   return (
     <header

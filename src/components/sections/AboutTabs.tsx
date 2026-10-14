@@ -1,8 +1,8 @@
 'use client';
 
-import { cn } from '@/lib/cn';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import { cn } from '@/lib/cn';
 
 type Tab = 'values' | 'vision';
 

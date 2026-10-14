@@ -1,8 +1,8 @@
 'use client';
 
 import { X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
 import dynamic from 'next/dynamic';
+import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
 
 const PdfViewer = dynamic(() => import('./PdfViewer').then((m) => m.PdfViewer), {
@@ -36,16 +36,11 @@ export function PdfModal({ url, title, onClose }: Props) {
   }, [onClose]);
 
   return (
-    // biome-ignore lint/a11y/useSemanticElements: native <dialog> can't be styled as overlay here; aria-modal preserves semantics
-    // biome-ignore lint/a11y/useKeyWithClickEvents: Escape handled at document level
     <div
       role="dialog"
       aria-modal="true"
       aria-label={title}
       className="fixed inset-0 z-50 flex flex-col bg-black/70 backdrop-blur-sm"
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
     >
       <div className="flex items-center justify-between gap-4 border-b border-white/10 bg-background px-4 py-3">
         <h2 className="truncate text-sm font-semibold">{title}</h2>

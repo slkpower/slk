@@ -1,17 +1,17 @@
 'use client';
 
+import { FileText, Search } from 'lucide-react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { useMemo, useState } from 'react';
+import { useDebounce } from 'use-debounce';
 import { PdfModal } from '@/components/pdf/PdfModal';
 import { cn } from '@/lib/cn';
 import { type Product, type ProductCategory, productCategories, products } from '@/lib/products';
-import { FileText, Search } from 'lucide-react';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import { useMemo, useState } from 'react';
-import { useDebounce } from 'use-debounce';
 
-type Props = { initialCategory?: ProductCategory };
+type Props = { initialCategory?: ProductCategory; headingLevel?: 'h1' | 'h2' };
 
-export function ProductCatalog({ initialCategory = 'rent' }: Props) {
+export function ProductCatalog({ initialCategory = 'rent', headingLevel: Heading = 'h2' }: Props) {
   const t = useTranslations('products');
   const tCommon = useTranslations('common');
   const [category, setCategory] = useState<ProductCategory>(initialCategory);
@@ -35,7 +35,9 @@ export function ProductCatalog({ initialCategory = 'rent' }: Props) {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">
             {t('eyebrow')}
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">{t('title')}</h2>
+          <Heading className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
+            {t('title')}
+          </Heading>
           <p className="mt-3 text-base text-muted-foreground md:text-lg">{t('subtitle')}</p>
         </div>
 
@@ -88,7 +90,7 @@ export function ProductCatalog({ initialCategory = 'rent' }: Props) {
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
                   <Image
                     src={p.image}
-                    alt={p.title}
+                    alt={`Genset ${p.title} — ${t(`categories.${category}`)}`}
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"

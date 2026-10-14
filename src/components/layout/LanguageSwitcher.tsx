@@ -1,9 +1,9 @@
 'use client';
 
-import { type Locale, routing, usePathname, useRouter } from '@/i18n/routing';
-import { useLocale, useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { useTransition } from 'react';
+import { type Locale, routing, usePathname, useRouter } from '@/i18n/routing';
 
 export function LanguageSwitcher() {
   const locale = useLocale() as Locale;
@@ -25,7 +25,6 @@ export function LanguageSwitcher() {
   };
 
   return (
-    // biome-ignore lint/a11y/useSemanticElements: <fieldset> adds default styling we don't want; aria-label + role=group is equivalent
     <div
       role="group"
       aria-label={t('switchLanguage')}

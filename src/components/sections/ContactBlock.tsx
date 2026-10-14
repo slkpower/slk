@@ -1,8 +1,10 @@
-import { siteConfig } from '@/lib/site-config';
 import { Mail, MessageCircle, Phone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { siteConfig } from '@/lib/site-config';
 
-export function ContactBlock() {
+type Props = { headingLevel?: 'h1' | 'h2' };
+
+export function ContactBlock({ headingLevel: Heading = 'h2' }: Props) {
   const t = useTranslations('contact');
 
   const items = [
@@ -39,7 +41,9 @@ export function ContactBlock() {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">
             {t('eyebrow')}
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">{t('title')}</h2>
+          <Heading className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
+            {t('title')}
+          </Heading>
           <p className="mt-3 text-base text-muted-foreground md:text-lg">{t('subtitle')}</p>
         </div>
 

@@ -1,4 +1,9 @@
+import type { Metadata } from 'next';
 import { Link } from '@/i18n/routing';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (

@@ -1,7 +1,7 @@
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 import { Link } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 
 export function Hero() {
   const t = useTranslations('hero');

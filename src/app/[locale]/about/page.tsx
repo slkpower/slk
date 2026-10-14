@@ -1,6 +1,7 @@
-import { AboutSection } from '@/components/sections/AboutSection';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { AboutSection } from '@/components/sections/AboutSection';
+import { buildPageMetadata } from '@/lib/seo';
 
 export async function generateMetadata({
   params,
@@ -8,16 +9,18 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'nav' });
-  return { title: t('about') };
+  const t = await getTranslations({ locale, namespace: 'meta.about' });
+  return buildPageMetadata({
+    locale,
+    path: '/about',
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+  });
 }
 
-export default async function AboutPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <AboutSection />;
+  return <AboutSection headingLevel="h1" />;
 }

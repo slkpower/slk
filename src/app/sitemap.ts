@@ -1,30 +1,26 @@
+import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { productCategories } from '@/lib/products';
-import { siteConfig } from '@/lib/site-config';
-import type { MetadataRoute } from 'next';
+import { languageAlternates, localizedUrl } from '@/lib/seo';
 
-const routes = ['', '/about', '/products', '/clients', '/contact'] as const;
+const routes = ['/', '/about', '/products', '/clients', '/contact'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = siteConfig.url.replace(/\/$/, '');
+  const lastModified = new Date();
+  const paths = [...routes, ...productCategories.map((c) => `/products/${c}`)];
   const entries: MetadataRoute.Sitemap = [];
 
   for (const locale of routing.locales) {
-    const prefix = locale === routing.defaultLocale ? '' : `/${locale}`;
-    for (const r of routes) {
+    for (const path of paths) {
       entries.push({
-        url: `${base}${prefix}${r || '/'}`,
+        url: localizedUrl(locale, path),
+        lastModified,
         changeFrequency: 'monthly',
-        priority: r === '' ? 1 : 0.8,
-      });
-    }
-    for (const c of productCategories) {
-      entries.push({
-        url: `${base}${prefix}/products/${c}`,
-        changeFrequency: 'monthly',
-        priority: 0.7,
+        priority: path === '/' ? 1 : path.startsWith('/products/') ? 0.7 : 0.8,
+        alternates: { languages: languageAlternates(path) },
       });
     }
   }
+
   return entries;
 }

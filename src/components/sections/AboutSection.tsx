@@ -1,8 +1,10 @@
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { AboutTabs } from './AboutTabs';
 
-export function AboutSection() {
+type Props = { headingLevel?: 'h1' | 'h2' };
+
+export function AboutSection({ headingLevel: Heading = 'h2' }: Props) {
   const t = useTranslations('about');
 
   return (
@@ -21,7 +23,9 @@ export function AboutSection() {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">
             {t('eyebrow')}
           </p>
-          <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">{t('title')}</h2>
+          <Heading className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">
+            {t('title')}
+          </Heading>
           <div className="mt-8">
             <AboutTabs />
           </div>

@@ -1,9 +1,12 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ProductCatalog } from '@/components/sections/ProductCatalog';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { routing } from '@/i18n/routing';
 import { type ProductCategory, productCategories } from '@/lib/products';
-import type { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { notFound } from 'next/navigation';
+import { buildPageMetadata, localizedUrl } from '@/lib/seo';
+import { breadcrumbLd, serviceLd } from '@/lib/structured-data';
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -22,8 +25,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, category } = await params;
   if (!isCategory(category)) return {};
-  const t = await getTranslations({ locale, namespace: 'products.categories' });
-  return { title: t(category) };
+  const t = await getTranslations({ locale, namespace: `meta.categories.${category}` });
+  return buildPageMetadata({
+    locale,
+    path: `/products/${category}`,
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+  });
 }
 
 export default async function CategoryPage({
@@ -34,5 +43,26 @@ export default async function CategoryPage({
   const { locale, category } = await params;
   if (!isCategory(category)) notFound();
   setRequestLocale(locale);
-  return <ProductCatalog initialCategory={category} />;
+
+  const tCat = await getTranslations({ locale, namespace: 'products.categories' });
+  const tMeta = await getTranslations({ locale, namespace: 'meta.categories' });
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
+
+  const service = serviceLd({
+    name: tCat(category),
+    description: tMeta(`${category}.description`),
+    url: localizedUrl(locale, `/products/${category}`),
+  });
+  const breadcrumb = breadcrumbLd([
+    { name: tNav('home'), url: localizedUrl(locale, '/') },
+    { name: tNav('products'), url: localizedUrl(locale, '/products') },
+    { name: tCat(category), url: localizedUrl(locale, `/products/${category}`) },
+  ]);
+
+  return (
+    <>
+      <JsonLd data={[service, breadcrumb]} />
+      <ProductCatalog initialCategory={category} headingLevel="h1" />
+    </>
+  );
 }

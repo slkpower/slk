@@ -1,5 +1,5 @@
-import { cn } from '@/lib/cn';
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
+import { cn } from '@/lib/cn';
 
 type Variant = 'primary' | 'outline' | 'ghost';
 type Size = 'sm' | 'md' | 'lg';

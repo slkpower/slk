@@ -6,9 +6,17 @@ type Props = {
   subtitle?: string;
   align?: 'left' | 'center';
   className?: string;
+  as?: 'h1' | 'h2';
 };
 
-export function SectionTitle({ eyebrow, title, subtitle, align = 'center', className }: Props) {
+export function SectionTitle({
+  eyebrow,
+  title,
+  subtitle,
+  align = 'center',
+  className,
+  as: Heading = 'h2',
+}: Props) {
   return (
     <div
       className={cn(
@@ -20,7 +28,7 @@ export function SectionTitle({ eyebrow, title, subtitle, align = 'center', class
       {eyebrow ? (
         <p className="text-sm font-semibold uppercase tracking-wider text-primary">{eyebrow}</p>
       ) : null}
-      <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">{title}</h2>
+      <Heading className="mt-2 text-3xl font-bold tracking-tight md:text-4xl">{title}</Heading>
       {subtitle ? (
         <p className="mt-3 text-base text-muted-foreground md:text-lg">{subtitle}</p>
       ) : null}

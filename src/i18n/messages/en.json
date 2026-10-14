@@ -1,7 +1,55 @@
 {
   "meta": {
-    "title": "PT Sarana Lima Kencana — Genset Sales, Rental, Service & Maintenance",
-    "description": "Trusted provider of generator sets, electrical panels, and maintenance services. Delivering Quality through Solutions."
+    "title": "Genset Sales & Rental Jakarta — Generator Set 9–1000 kVA | PT Sarana Lima Kencana",
+    "description": "Specialist in genset sales & rental in Jakarta and across Indonesia. Cummins, Perkins, Isuzu, Yanmar generator sets 9–1000 kVA, ATS/AMF panels, genuine spareparts, service & maintenance. WhatsApp 0888-0964-4596.",
+    "keywords": "genset, generator set, genset rental, genset sales, genset Jakarta, diesel generator, Cummins generator, Perkins generator, Isuzu generator, Yanmar generator, ATS panel, AMF panel, genset spareparts, genset service, PT Sarana Lima Kencana",
+    "about": {
+      "title": "About Us — Genset & Electrical Panel Specialist",
+      "description": "Get to know PT Sarana Lima Kencana — a trusted provider of generator sets, electrical panels, spareparts, and maintenance services. Delivering Quality through Solutions.",
+      "keywords": "about PT Sarana Lima Kencana, genset company, generator set supplier Jakarta"
+    },
+    "products": {
+      "title": "Genset Products & Services — Sales, Rental, Service, Spareparts",
+      "description": "Generator sets 9–1000 kVA, genset rental 25–500 kVA, ATS/AMF & Synchronize panels, genuine spareparts, and service & overhaul from PT Sarana Lima Kencana.",
+      "keywords": "genset products, genset services, genset sales, genset rental, electrical panel, genset spareparts, genset service"
+    },
+    "clients": {
+      "title": "Our Clients & Business Partners",
+      "description": "Companies and institutions that trust PT Sarana Lima Kencana for their generator set and electrical panel needs.",
+      "keywords": "genset clients, genset business partners, PT Sarana Lima Kencana customers"
+    },
+    "contact": {
+      "title": "Contact Us — Free Genset Consultation",
+      "description": "Contact PT Sarana Lima Kencana via WhatsApp, email, or phone for consultation on genset sales, rental, and service in Jakarta and across Indonesia.",
+      "keywords": "contact genset, PT Sarana Lima Kencana contact, genset consultation, genset rental price"
+    },
+    "categories": {
+      "rent": {
+        "title": "Genset Rental 25–500 kVA — Sarana Rent",
+        "description": "Genset rental services from 25–500 kVA at competitive prices for projects, events, and emergency power needs across Indonesia.",
+        "keywords": "genset rental, generator rental, genset rental Jakarta, daily genset rental, genset rental price"
+      },
+      "power": {
+        "title": "Genset Sales 9–1000 kVA — Sarana Power",
+        "description": "Generator sets from leading brands — Cummins, Perkins, Isuzu, Yanmar, Tsuzumi — from 9–1000 kVA, including pump and marine engines.",
+        "keywords": "genset sales, genset price, Cummins genset, Perkins genset, Isuzu genset, Yanmar genset, Tsuzumi genset, new generator set"
+      },
+      "services": {
+        "title": "Genset Service & Maintenance — Sarana Services",
+        "description": "Preventive maintenance, corrective maintenance, overhaul, and genset maintenance contracts by experienced technicians.",
+        "keywords": "genset service, genset maintenance, genset overhaul, generator maintenance contract"
+      },
+      "parts": {
+        "title": "Genuine Genset Spareparts — Sarana Parts",
+        "description": "Procurement of genuine genset spareparts to maintain the performance and reliability of your generator set.",
+        "keywords": "genset spareparts, generator spare parts, genuine genset parts"
+      },
+      "panel": {
+        "title": "ATS, AMF & Synchronize Panels — Sarana Panel",
+        "description": "Fabrication of ATS, AMF, and Synchronize panels tailored to your electrical system needs.",
+        "keywords": "ATS panel, AMF panel, synchronize panel, genset electrical panel, panel fabrication"
+      }
+    }
   },
   "nav": {
     "home": "Home",
@@ -115,6 +163,37 @@
       "submit": "Send message",
       "maintenance": "The contact form is under maintenance. Please reach us via WhatsApp, email, or phone."
     }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about genset sales, rental, and service.",
+    "items": [
+      {
+        "q": "What genset capacities are available?",
+        "a": "We provide generator sets from 9–1000 kVA for purchase and 25–500 kVA for rental."
+      },
+      {
+        "q": "Can I rent a genset on a daily basis?",
+        "a": "Yes, Sarana Rent offers daily, weekly, and monthly genset rental for projects, events, and emergency power needs."
+      },
+      {
+        "q": "Which genset brands do you sell?",
+        "a": "We sell gensets from leading brands such as Cummins, Perkins, Isuzu, Yanmar, and Tsuzumi."
+      },
+      {
+        "q": "Do you provide genset service and maintenance?",
+        "a": "Yes, we provide preventive maintenance, corrective maintenance, overhaul, and genset maintenance contracts."
+      },
+      {
+        "q": "Do you deliver outside Jakarta?",
+        "a": "Yes, we serve genset sales and rental across all regions of Indonesia."
+      },
+      {
+        "q": "How do I order or get a consultation?",
+        "a": "Contact us via WhatsApp 0888-0964-4596, email, or phone for consultation and price quotes."
+      }
+    ]
   },
   "footer": {
     "tagline": "Delivering Quality through Solutions",
